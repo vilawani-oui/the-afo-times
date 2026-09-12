@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Afo Times</title>
+<meta name="description" content="The Afo Times — thirteen themes, published every Afo day.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#15130F; --paper:#EAE2D0; --paper-dim:#C9BFA8; --green:#169B62; --rule:#3A362C; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--ink); color:var(--paper); font-family:'Source Sans 3',sans-serif; line-height:1.6; }
+  .wrap{ max-width:760px; margin:0 auto; padding:0 24px; }
+  header{ padding:64px 24px 32px; text-align:center; }
+  header img{ width:260px; margin-bottom:8px; }
+  header p{ font-size:15px; color:var(--paper-dim); margin:8px 0 0; }
+  .rhythm{ display:flex; justify-content:center; gap:24px; flex-wrap:wrap; padding:16px 24px 40px; border-bottom:1px solid var(--rule); }
+  .rhythm-item{ text-align:center; }
+  .rhythm-item .label{ font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:var(--paper-dim); }
+  .rhythm-item .val{ font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--green); margin-top:2px; }
+  section{ padding:36px 24px; }
+  h2{ font-family:'Cormorant Garamond',serif; font-weight:600; font-size:24px; margin:0 0 8px; }
+  section > p.lede{ font-size:14px; color:var(--paper-dim); margin:0 0 24px; max-width:60ch; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:1px; background:var(--rule); }
+  .theme-card{ background:var(--ink); padding:18px; }
+  .theme-card .tag{ font-family:'IBM Plex Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:0.08em; color:var(--green); margin-bottom:6px; }
+  .theme-card h3{ font-family:'Cormorant Garamond',serif; font-weight:600; font-size:18px; margin:0 0 8px; }
+  .beats-row{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:32px; }
+  .beat-chip{ font-family:'IBM Plex Mono',monospace; font-size:11px; padding:6px 12px; border-radius:12px; background:rgba(255,255,255,0.06); color:var(--paper-dim); }
+  .beat-chip.diaspora{ background:rgba(22,155,98,0.18); color:var(--green); border:1px solid var(--green); }
+  .theme-card .placeholder{ font-size:12px; color:var(--paper-dim); font-style:italic; }
+  .footnote{ font-size:12px; color:var(--paper-dim); text-align:center; padding:32px 24px; border-top:1px solid var(--rule); }
+  .footnote a{ color:var(--green); }
+</style>
+</head>
+<body>
+<header>
+  <img src="images/the-afo-times.png" alt="The Afo Times">
+  <p>Thirteen themes, aggregated and commented on, every Afo day.</p>
+</header>
+
+<div class="rhythm">
+  <div class="rhythm-item"><div class="label">Online</div><div class="val">Every 4 days</div></div>
+  <div class="rhythm-item"><div class="label">Newspaper</div><div class="val">Every 28 days</div></div>
+  <div class="rhythm-item"><div class="label">Magazine</div><div class="val">Every 52 days</div></div>
+  <div class="rhythm-item"><div class="label">Next issue</div><div class="val">Sep 15, 2026</div></div>
+</div>
+
+<section>
+  <h2>Thirteen themes</h2>
+  <p class="lede">Every issue carries at least one piece per theme — quality reporting aggregated from outlets worldwide, alongside original commentary.</p>
+  <div class="grid">
+    <div class="theme-card"><div class="tag">Direction</div><h3>North</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">Direction</div><h3>South</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">Direction</div><h3>East</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">Direction</div><h3>West</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">City</div><h3>Paris</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">City</div><h3>Lagos</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">City</div><h3>Washington DC</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">City</div><h3>Athens</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">Institution</div><h3>EU</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">Institution</div><h3>AU</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">Institution</div><h3>OAS</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">Institution</div><h3>UN</h3><p class="placeholder">Aggregated coverage pending</p></div>
+    <div class="theme-card"><div class="tag">Institution</div><h3>ECOWAS</h3><p class="placeholder">Aggregated coverage pending</p></div>
+  </div>
+</section>
+
+<section style="border-top:1px solid var(--rule);">
+  <h2>Nine beats</h2>
+  <p class="lede">The 13 themes are geography. Beats are what actually gets assigned and written &mdash; every region gets covered across these, not just reported on generically.</p>
+  <div class="beats-row">
+    <span class="beat-chip">Politics &amp; Governance</span>
+    <span class="beat-chip">Economy &amp; Business</span>
+    <span class="beat-chip">Weather &amp; Climate</span>
+    <span class="beat-chip">Style &amp; Culture</span>
+    <span class="beat-chip">Health &amp; Science</span>
+    <span class="beat-chip">Technology</span>
+    <span class="beat-chip">Sports</span>
+    <span class="beat-chip">Opinion / Editorial</span>
+    <span class="beat-chip diaspora">Diaspora &amp; Community</span>
+  </div>
+  <p style="font-size:12px; color:var(--paper-dim); font-style:italic;">29 base contributors across all regions and beats. Diaspora &amp; Community is the one beat with no equivalent at NYT, WaPo, Punch, or Le Monde &mdash; it's what ties Lagos, DC, Paris, and Athens into one readership instead of four unrelated bureaus.</p>
+</section>
+
+<section style="border-top:1px solid var(--rule);">
+  <h2>Commentary</h2>
+  <p class="lede">Original writing layered on top of the aggregated feed &mdash; not just links, but a point of view on what they mean together.</p>
+  <p class="placeholder" style="font-size:13px; color:var(--paper-dim); font-style:italic;">First commentary piece publishes alongside the Sep 15, 2026 issue.</p>
+</section>
+
+<p class="footnote">The Afo Times &mdash; an Athena Kamalu Publishing title, an imprint of <a href="https://explicitusllc.com">Explicitus LLC</a>, part of <a href="https://thesunlightengine.com">The Sunlight Engine</a></p>
+
+</body>
+</html>
